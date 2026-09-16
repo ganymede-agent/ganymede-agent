@@ -3,6 +3,7 @@
   <desc id="desc">
     rybskiworks machine. Send task, get proof.
     Intake, scope, run, prove. Delegation-first, validation outside.
+    Backdrop: Jupiter and its moon Ganymede on its orbit.
   </desc>
 
   <defs>
@@ -13,11 +14,14 @@
       <stop offset="78%" class="grad-blue-edge"/>
       <stop offset="100%" class="grad-blue-edge"/>
     </linearGradient>
-    <radialGradient id="planet-shade" cx="38%" cy="32%" r="80%">
-      <stop offset="0%" class="planet-hi"/>
-      <stop offset="55%" class="planet-mid"/>
-      <stop offset="100%" class="planet-lo"/>
+    <radialGradient id="planet-shade" cx="38%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#5b6570" stop-opacity="0.35"/>
     </radialGradient>
+    <clipPath id="jup-clip">
+      <circle cx="985" cy="185" r="140"/>
+    </clipPath>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
     </marker>
@@ -36,14 +40,24 @@
     .selected-sub { fill: url(#whole-card-gradient); }
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
-    .planet-hi { stop-color: #ffffff; }
-    .planet-mid { stop-color: #e8edf3; }
-    .planet-lo { stop-color: #d3dae3; }
-    .planet-ring { fill: none; stroke: #c8d1db; stroke-width: 1.2; opacity: 0.7; }
-    .crater { fill: #ccd4dd; opacity: 0.55; }
-    .crater-ring { fill: none; stroke: #bfc8d3; stroke-width: 1; opacity: 0.6; }
+    .jup-base { fill: #f3e7d3; }
+    .b1 { fill: #f8f3e8; }
+    .b2 { fill: #e9d3ae; }
+    .b3 { fill: #f8f1e3; }
+    .b4 { fill: #dfb98f; }
+    .b5 { fill: #f5e9d6; }
+    .b6 { fill: #d9ac7e; }
+    .b7 { fill: #efe0c6; }
+    .b8 { fill: #e5c9a0; }
+    .spot { fill: #e07a5f; stroke: #b8543f; stroke-width: 2; }
+    .spot-inner { fill: #f0a080; opacity: 0.8; }
+    .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
+    .orbit-ganymede { fill: none; stroke: #c8d1db; stroke-width: 1.4; opacity: 0.85; }
+    .moon { fill: #9aa5b1; opacity: 0.9; }
+    .moon-ganymede { fill: url(#whole-card-gradient); }
+    .moon-halo { fill: none; stroke: url(#whole-card-gradient); stroke-width: 1.2; opacity: 0.6; }
+    .moon-label { fill: #6b7683; font-size: 13px; }
     .star { fill: #c8d1db; opacity: 0.55; }
-    .orbit-dot { fill: #0891b2; opacity: 0.9; }
     .backdrop { opacity: 0.5; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .signature { font-size: 26px; font-weight: 700; letter-spacing: 1.2px; }
@@ -65,14 +79,22 @@
       .secondary { fill: #a1abb5; }
       .grad-blue-edge { stop-color: #22d3ee; }
       .grad-red-core { stop-color: #d2a8ff; }
-      .planet-hi { stop-color: #2a3547; }
-      .planet-mid { stop-color: #1d2534; }
-      .planet-lo { stop-color: #141b28; }
-      .planet-ring { stroke: #3a424c; opacity: 0.8; }
-      .crater { fill: #2c384d; opacity: 0.7; }
-      .crater-ring { stroke: #3a4a63; opacity: 0.7; }
+      .jup-base { fill: #232b3a; }
+      .b1 { fill: #2a3345; }
+      .b2 { fill: #1f2735; }
+      .b3 { fill: #2e3a4f; }
+      .b4 { fill: #3a3a4a; }
+      .b5 { fill: #28303f; }
+      .b6 { fill: #33394a; }
+      .b7 { fill: #262d3b; }
+      .b8 { fill: #2b3343; }
+      .spot { fill: #8a5a4a; stroke: #a87a63; }
+      .spot-inner { fill: #a87a63; opacity: 0.6; }
+      .orbit { stroke: #3a424c; opacity: 0.7; }
+      .orbit-ganymede { stroke: #3a424c; opacity: 0.95; }
+      .moon { fill: #5b6570; }
+      .moon-label { fill: #8b949e; }
       .star { fill: #3a424c; opacity: 0.9; }
-      .orbit-dot { fill: #22d3ee; }
     }
   </style>
 
@@ -88,17 +110,39 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
-    <circle cx="1015" cy="185" r="150" fill="url(#planet-shade)" stroke="#c8d1db" stroke-width="1.5"/>
-    <path d="M 885 150 Q 1015 170 1145 140" class="planet-ring"/>
-    <path d="M 878 195 Q 1015 220 1152 190" class="planet-ring"/>
-    <path d="M 885 238 Q 1015 262 1145 232" class="planet-ring"/>
-    <circle cx="970" cy="150" r="18" class="crater"/>
-    <circle cx="970" cy="150" r="23" class="crater-ring"/>
-    <circle cx="1045" cy="205" r="11" class="crater"/>
-    <circle cx="1005" cy="235" r="7" class="crater"/>
-    <circle cx="1085" cy="145" r="8" class="crater"/>
-    <ellipse cx="1015" cy="185" rx="195" ry="52" transform="rotate(-14 1015 185)" class="planet-ring"/>
-    <circle cx="1185" cy="150" r="6" class="orbit-dot"/>
+    <!-- moon orbits (behind the planet) -->
+    <ellipse cx="985" cy="185" rx="145" ry="38" transform="rotate(-14 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="160" ry="46" transform="rotate(-14 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="178" ry="55" transform="rotate(-14 985 185)" class="orbit-ganymede"/>
+    <ellipse cx="985" cy="185" rx="195" ry="68" transform="rotate(-14 985 185)" class="orbit"/>
+    <!-- Jupiter: banded body -->
+    <circle cx="985" cy="185" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
+    <g clip-path="url(#jup-clip)">
+      <rect x="845" y="45" width="280" height="42" class="b1"/>
+      <rect x="845" y="87" width="280" height="36" class="b2"/>
+      <rect x="845" y="123" width="280" height="34" class="b3"/>
+      <rect x="845" y="157" width="280" height="30" class="b4"/>
+      <rect x="845" y="187" width="280" height="32" class="b5"/>
+      <rect x="845" y="219" width="280" height="34" class="b6"/>
+      <rect x="845" y="253" width="280" height="36" class="b7"/>
+      <rect x="845" y="289" width="280" height="36" class="b8"/>
+      <!-- belt ripple -->
+      <path d="M 845 157 Q 915 150 985 157 T 1125 155" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      <path d="M 845 219 Q 915 226 985 219 T 1125 221" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      <!-- Great Red Spot -->
+      <ellipse cx="1032" cy="238" rx="30" ry="17" class="spot"/>
+      <ellipse cx="1032" cy="238" rx="17" ry="9" class="spot-inner"/>
+      <!-- limb shading -->
+      <circle cx="985" cy="185" r="140" fill="url(#planet-shade)"/>
+    </g>
+    <circle cx="985" cy="185" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
+    <!-- moons: io, europa, callisto, ganymede highlighted -->
+    <circle cx="1116.4" cy="168.8" r="4" class="moon"/>
+    <circle cx="832.2" cy="210.8" r="4" class="moon"/>
+    <circle cx="850.6" cy="263.5" r="4.5" class="moon"/>
+    <circle cx="1135.9" cy="123.4" r="11" class="moon-halo"/>
+    <circle cx="1135.9" cy="123.4" r="7" class="moon-ganymede"/>
+    <text x="1122" y="108" text-anchor="end" class="moon-label">ganymede</text>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
