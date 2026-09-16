@@ -14,21 +14,22 @@
       <stop offset="100%" class="grad-blue-edge"/>
     </linearGradient>
     <radialGradient id="planet-shade" cx="38%" cy="30%" r="85%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
       <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#5b6570" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2f3742" stop-opacity="0.50"/>
     </radialGradient>
     <filter id="band-wobble" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency="0.008 0.09" numOctaves="2" seed="7" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="10"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="10" result="w"/>
+      <feGaussianBlur in="w" stdDeviation="0.6"/>
     </filter>
     <filter id="blur8" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8"/>
     </filter>
-    <linearGradient id="terminator" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="68%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#1f2328" stop-opacity="0.30"/>
+    <linearGradient id="terminator" x1="0.25" y1="0.2" x2="0.9" y2="0.95">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="62%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#10151c" stop-opacity="0.48"/>
     </linearGradient>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
@@ -45,16 +46,16 @@
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
     .jup-base { fill: #f3e7d3; }
-    .b1 { fill: #f8f3e8; }
-    .b2 { fill: #e9d3ae; }
-    .b3 { fill: #f8f1e3; }
-    .b4 { fill: #dfb98f; }
-    .b5 { fill: #f5e9d6; }
-    .b6 { fill: #d9ac7e; }
-    .b7 { fill: #efe0c6; }
-    .b8 { fill: #e5c9a0; }
-    .spot { fill: #e07a5f; stroke: #b8543f; stroke-width: 2; }
-    .spot-inner { fill: #f0a080; opacity: 0.8; }
+    .b1 { fill: #f7ecd4; }
+    .b2 { fill: #eebd7f; }
+    .b3 { fill: #f6e3c0; }
+    .b4 { fill: #d9984f; }
+    .b5 { fill: #f2d49e; }
+    .b6 { fill: #c98544; }
+    .b7 { fill: #ecca97; }
+    .b8 { fill: #d99f58; }
+    .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
+    .spot-inner { fill: #f0936b; opacity: 0.85; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
     .orbit-ganymede { fill: none; stroke: #c8d1db; stroke-width: 1.4; opacity: 0.85; }
     .moon { fill: #9aa5b1; opacity: 0.9; }
@@ -76,15 +77,15 @@
       .secondary { fill: #a1abb5; }
       .grad-blue-edge { stop-color: #22d3ee; }
       .grad-red-core { stop-color: #d2a8ff; }
-      .jup-base { fill: #232b3a; }
-      .b1 { fill: #2a3345; }
-      .b2 { fill: #1f2735; }
-      .b3 { fill: #2e3a4f; }
-      .b4 { fill: #3a3a4a; }
-      .b5 { fill: #28303f; }
-      .b6 { fill: #33394a; }
-      .b7 { fill: #262d3b; }
-      .b8 { fill: #2b3343; }
+      .jup-base { fill: #2c2318; }
+      .b1 { fill: #4a3823; }
+      .b2 { fill: #33261a; }
+      .b3 { fill: #54402a; }
+      .b4 { fill: #6b4a26; }
+      .b5 { fill: #453522; }
+      .b6 { fill: #5e4023; }
+      .b7 { fill: #3d2f1f; }
+      .b8 { fill: #4f3a22; }
       .spot { fill: #8a5a4a; stroke: #a87a63; }
       .spot-inner { fill: #a87a63; opacity: 0.6; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
@@ -112,7 +113,7 @@
     <ellipse cx="965" cy="193" rx="183" ry="32" transform="rotate(-4 965 193)" class="orbit-ganymede"/>
     <ellipse cx="965" cy="193" rx="200" ry="40" transform="rotate(-4 965 193)" class="orbit"/>
     <!-- Jupiter: banded body -->
-    <circle cx="965" cy="193" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
+    <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
     <g clip-path="url(#jup-clip)">
       <g filter="url(#band-wobble)">
       <rect x="825" y="53" width="280" height="42" class="b1"/>
@@ -133,9 +134,8 @@
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
-      <ellipse cx="920" cy="146" rx="70" ry="38" fill="#ffffff" opacity="0.35" filter="url(#blur8)"/>
     </g>
-    <circle cx="965" cy="193" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
+    <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- moons: io, europa, callisto, ganymede highlighted -->
     <circle cx="1101.2" cy="191.9" r="4" class="moon"/>
     <circle cx="805.5" cy="197.4" r="4" class="moon"/>
