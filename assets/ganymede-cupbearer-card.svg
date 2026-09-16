@@ -71,14 +71,18 @@
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
     .jup-base { fill: #f3e7d3; }
-    .b1 { fill: #f4e3c2; }
-    .b2 { fill: #e2a55f; }
-    .b3 { fill: #f0d8ae; }
+    .cap-top { fill: #d9c49a; }
+    .b2a { fill: #f8f0dd; }
+    .b2b { fill: #e2a55f; }
+    .b2c { fill: #f8f0dd; }
+    .b3 { fill: #f4ead2; }
     .b4 { fill: #cf8a44; }
-    .b5 { fill: #ebcb8f; }
+    .b5 { fill: #fbf6e8; }
     .b6 { fill: #bd7a38; }
-    .b7 { fill: #e6c086; }
-    .b8 { fill: #cc9047; }
+    .b7 { fill: #f2e4c6; }
+    .cap-bot { fill: #c9ab7a; }
+    .fret { fill: none; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.65; }
+    .storm { fill: #fbf6e8; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.9; }
     .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
     .spot-inner { fill: #f0936b; opacity: 0.85; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
@@ -105,14 +109,18 @@
       .grad-blue-edge { stop-color: #22d3ee; }
       .grad-red-core { stop-color: #d2a8ff; }
       .jup-base { fill: #2c2318; }
-      .b1 { fill: #4a3823; }
-      .b2 { fill: #33261a; }
-      .b3 { fill: #54402a; }
-      .b4 { fill: #6b4a26; }
-      .b5 { fill: #453522; }
-      .b6 { fill: #5e4023; }
-      .b7 { fill: #3d2f1f; }
-      .b8 { fill: #4f3a22; }
+      .cap-top { fill: #4a3a26; }
+      .b2a { fill: #5a4a33; }
+      .b2b { fill: #6b4a26; }
+      .b2c { fill: #54402c; }
+      .b3 { fill: #5c4c34; }
+      .b4 { fill: #6e4c28; }
+      .b5 { fill: #65563c; }
+      .b6 { fill: #604026; }
+      .b7 { fill: #57462e; }
+      .cap-bot { fill: #413322; }
+      .fret { stroke: #8a6a42; }
+      .storm { fill: #65563c; stroke: #8a6a42; }
       .spot { fill: #8a5a4a; stroke: #a87a63; }
       .spot-inner { fill: #a87a63; opacity: 0.6; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
@@ -147,17 +155,30 @@
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
     <g clip-path="url(#jup-clip)">
       <g filter="url(#band-wobble)">
-      <rect x="825" y="53" width="280" height="42" class="b1"/>
-      <rect x="825" y="95" width="280" height="36" class="b2"/>
-      <rect x="825" y="131" width="280" height="34" class="b3"/>
-      <rect x="825" y="165" width="280" height="30" class="b4"/>
-      <rect x="825" y="195" width="280" height="32" class="b5"/>
-      <rect x="825" y="227" width="280" height="34" class="b6"/>
-      <rect x="825" y="261" width="280" height="36" class="b7"/>
-      <rect x="825" y="297" width="280" height="36" class="b8"/>
+      <rect x="825" y="53" width="280" height="30" class="cap-top"/>
+      <rect x="825" y="83" width="280" height="12" class="b2a"/>
+      <rect x="825" y="95" width="280" height="16" class="b2b"/>
+      <rect x="825" y="111" width="280" height="14" class="b2c"/>
+      <rect x="825" y="125" width="280" height="34" class="b3"/>
+      <rect x="825" y="159" width="280" height="28" class="b4"/>
+      <rect x="825" y="187" width="280" height="32" class="b5"/>
+      <rect x="825" y="219" width="280" height="32" class="b6"/>
+      <rect x="825" y="251" width="280" height="36" class="b7"/>
+      <rect x="825" y="287" width="280" height="46" class="cap-bot"/>
       <!-- belt ripple -->
       <path d="M 825 165 Q 895 158 965 165 T 1105 163" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
       <path d="M 825 227 Q 895 234 965 227 T 1105 229" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      <!-- fractal frets on orange bands -->
+      <path d="M 840 172 q 18 -7 36 0 t 36 0 t 36 2 t 36 -3 t 36 1 t 36 -1 t 36 2" class="fret"/>
+      <path d="M 845 180 q 22 6 44 0 t 44 -2 t 44 3 t 44 -3 t 44 1 t 44 0" class="fret"/>
+      <path d="M 840 232 q 18 -6 36 1 t 36 -2 t 36 2 t 36 -2 t 36 1 t 36 -1 t 36 2" class="fret"/>
+      <path d="M 845 240 q 22 5 44 -1 t 44 2 t 44 -3 t 44 2 t 44 0 t 40 -1" class="fret"/>
+      <path d="M 850 103 q 20 -4 40 0 t 40 1 t 40 -2 t 40 1 t 40 0" class="fret"/>
+      <!-- small storms -->
+      <ellipse cx="905" cy="173" rx="9" ry="5" class="storm"/>
+      <ellipse cx="986" cy="234" rx="7" ry="4" class="storm"/>
+      <ellipse cx="935" cy="241" rx="5" ry="3" class="storm"/>
+      <ellipse cx="1062" cy="170" rx="6" ry="3.5" class="storm"/>
       </g>
       <!-- Great Red Spot -->
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
