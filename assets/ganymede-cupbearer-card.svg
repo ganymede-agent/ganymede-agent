@@ -2,7 +2,7 @@
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
     rybskiworks machine. Code of mass construction.
-    Intake, scope, run, prove. Delegation-first, validation outside.
+    Task in, proof out. Backdrop: Jupiter with its four large moons; one orbit highlighted.
     Backdrop: Jupiter with its four large moons; one orbit highlighted.
   </desc>
 
@@ -22,22 +22,15 @@
     <clipPath id="jup-clip">
       <circle cx="985" cy="185" r="140"/>
     </clipPath>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
-    </marker>
   </defs>
 
   <style>
     .bg { fill: #ffffff; }
-    .frame, .node { fill: #f6f8fa; stroke: #c8d1db; stroke-width: 1.5; }
+    .frame { fill: #f6f8fa; stroke: #c8d1db; stroke-width: 1.5; }
     .hairline { stroke: #c8d1db; stroke-width: 1.5; }
-    .flow { stroke: #b1bac4; stroke-width: 1.5; }
-    .arrow { fill: #b1bac4; }
     .primary { fill: #1f2328; }
     .secondary { fill: #48515b; }
     .gradient-text { fill: url(#whole-card-gradient); }
-    .selected-node { fill: #f6f8fa; stroke: url(#whole-card-gradient); stroke-width: 2.5; }
-    .selected-sub { fill: url(#whole-card-gradient); }
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
     .jup-base { fill: #f3e7d3; }
@@ -63,17 +56,11 @@
     .headline { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
     .role { font-size: 24px; }
     .statement { font-size: 38px; font-weight: 600; letter-spacing: -0.45px; }
-    .node-title { font-size: 30px; font-weight: 700; letter-spacing: 0.5px; }
-    .node-sub { font-size: 23px; }
-    .node-sub-strong { font-size: 23px; font-weight: 700; }
     .footer { font-size: 22px; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
-      .frame, .node { fill: #161b22; stroke: #3a424c; }
-      .selected-node { fill: #161b22; }
+      .frame { fill: #161b22; stroke: #3a424c; }
       .hairline { stroke: #3a424c; }
-      .flow { stroke: #5b6570; }
-      .arrow { fill: #5b6570; }
       .primary { fill: #f0f6fc; }
       .secondary { fill: #a1abb5; }
       .grad-blue-edge { stop-color: #22d3ee; }
@@ -149,32 +136,10 @@
 
   <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
 
-  <text x="60" y="331" class="statement primary">code of mass</text>
-  <text x="60" y="384" class="statement primary">construction.</text>
-
-  <rect x="60" y="470" width="222" height="118" rx="12" class="node"/>
-  <text x="84" y="515" class="node-title primary">intake</text>
-  <text x="84" y="555" class="node-sub secondary">task</text>
-
-  <line x1="282" y1="529" x2="334" y2="529" class="flow" marker-end="url(#arrow)"/>
-
-  <rect x="346" y="470" width="222" height="118" rx="12" class="node"/>
-  <text x="370" y="515" class="node-title primary">scope</text>
-  <text x="370" y="555" class="node-sub secondary">authority</text>
-
-  <line x1="568" y1="529" x2="620" y2="529" class="flow" marker-end="url(#arrow)"/>
-
-  <rect x="632" y="470" width="222" height="118" rx="12" class="node"/>
-  <text x="656" y="515" class="node-title primary">run</text>
-  <text x="656" y="555" class="node-sub secondary">work</text>
-
-  <line x1="854" y1="529" x2="906" y2="529" class="flow" marker-end="url(#arrow)"/>
-
-  <rect x="918" y="470" width="222" height="118" rx="12" class="selected-node"/>
-  <text x="942" y="515" class="node-title primary">prove</text>
-  <text x="942" y="555" class="node-sub-strong selected-sub">results</text>
+  <text x="60" y="431" class="statement primary">code of mass</text>
+  <text x="60" y="484" class="statement primary">construction.</text>
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <text x="60" y="686" class="footer secondary">rybskiworks machine &#183; task in / proof out</text>
+  <text x="60" y="686" class="footer secondary">jupiter &#183; io / europa / ganymede / callisto &#183; third orbit highlighted</text>
 </svg>
