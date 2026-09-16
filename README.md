@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <samp>send task. get proof.</samp>
+  <samp>code of mass construction.</samp>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | --- | --- |
 | task + scope | proof + diff |
 
-No scope, no run. No proof, no done.
+No scope, no run. No proof, no done. Mass construction, minimal destruction.
 
 ### orbit
 
