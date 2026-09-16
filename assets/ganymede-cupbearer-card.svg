@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
-    georgrybski machine identity. Mass construction, minimal destruction.
-    Backdrop: Jupiter, near-horizontal orbits, one highlighted.
+    georgrybski machine identity. First moon that ships.
+    Backdrop: Jupiter, single orbit, small highlighted moon with transit shadow.
   </desc>
 
   <defs>
@@ -25,6 +25,9 @@
     </filter>
     <filter id="blur8" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.6"/>
     </filter>
     <linearGradient id="terminator" x1="0.25" y1="0.2" x2="0.9" y2="0.95">
       <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
@@ -107,11 +110,8 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
-    <!-- moon orbits (behind the planet) -->
-    <ellipse cx="965" cy="193" rx="150" ry="20" transform="rotate(-4 965 193)" class="orbit"/>
-    <ellipse cx="965" cy="193" rx="165" ry="26" transform="rotate(-4 965 193)" class="orbit"/>
+    <!-- single moon orbit (behind the planet) -->
     <ellipse cx="965" cy="193" rx="183" ry="32" transform="rotate(-4 965 193)" class="orbit-ganymede"/>
-    <ellipse cx="965" cy="193" rx="200" ry="40" transform="rotate(-4 965 193)" class="orbit"/>
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
     <g clip-path="url(#jup-clip)">
@@ -131,17 +131,16 @@
       <!-- Great Red Spot -->
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
+      <!-- ganymede transit shadow -->
+      <ellipse cx="1042" cy="188" rx="10" ry="6" fill="#10151c" opacity="0.45" filter="url(#blur2)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
-    <!-- moons: io, europa, callisto, ganymede highlighted -->
-    <circle cx="1101.2" cy="191.9" r="4" class="moon"/>
-    <circle cx="805.5" cy="197.4" r="4" class="moon"/>
-    <circle cx="814.0" cy="229.3" r="4.5" class="moon"/>
-    <circle cx="1129.5" cy="167.9" r="11" class="moon-halo"/>
-    <circle cx="1129.5" cy="167.9" r="7" class="moon-ganymede"/>
+    <!-- ganymede: small, highlighted, farther out -->
+    <circle cx="1147.6" cy="180.2" r="8" class="moon-halo"/>
+    <circle cx="1147.6" cy="180.2" r="4.5" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
@@ -149,8 +148,7 @@
   <text x="60" y="147" class="headline primary">ganymede-agent</text>
   <text x="60" y="207" class="role secondary">georgrybski&#8217;s machine identity</text>
 
-  <text x="60" y="431" class="statement primary">mass construction,</text>
-  <text x="60" y="484" class="statement primary">minimal destruction.</text>
+  <text x="60" y="460" class="statement primary">first moon that ships.</text>
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
