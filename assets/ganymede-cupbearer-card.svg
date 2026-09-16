@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
-    rybskiworks machine. Code of mass construction.
-    Task in, proof out. Backdrop: Jupiter with its four large moons; one orbit highlighted.
-    Backdrop: Jupiter with its four large moons; one orbit highlighted.
+    georgrybski machine identity. Send task, get proof.
+    Backdrop: Jupiter, near-horizontal orbits, one highlighted.
   </desc>
 
   <defs>
@@ -96,10 +95,10 @@
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
     <!-- moon orbits (behind the planet) -->
-    <ellipse cx="985" cy="185" rx="145" ry="38" transform="rotate(-4 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="160" ry="46" transform="rotate(-4 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="178" ry="55" transform="rotate(-4 985 185)" class="orbit-ganymede"/>
-    <ellipse cx="985" cy="185" rx="195" ry="68" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="150" ry="20" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="165" ry="26" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="183" ry="32" transform="rotate(-4 985 185)" class="orbit-ganymede"/>
+    <ellipse cx="985" cy="185" rx="200" ry="40" transform="rotate(-4 985 185)" class="orbit"/>
     <!-- Jupiter: banded body -->
     <circle cx="985" cy="185" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
     <g clip-path="url(#jup-clip)">
@@ -122,11 +121,11 @@
     </g>
     <circle cx="985" cy="185" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
     <!-- moons: io, europa, callisto, ganymede highlighted -->
-    <circle cx="1117.2" cy="191.9" r="4" class="moon"/>
-    <circle cx="830.0" cy="183.9" r="4" class="moon"/>
-    <circle cx="839.0" cy="239.0" r="4.5" class="moon"/>
-    <circle cx="1144.3" cy="150.6" r="11" class="moon-halo"/>
-    <circle cx="1144.3" cy="150.6" r="7" class="moon-ganymede"/>
+    <circle cx="1121.2" cy="183.9" r="4" class="moon"/>
+    <circle cx="825.5" cy="189.4" r="4" class="moon"/>
+    <circle cx="834.0" cy="221.3" r="4.5" class="moon"/>
+    <circle cx="1149.5" cy="159.9" r="11" class="moon-halo"/>
+    <circle cx="1149.5" cy="159.9" r="7" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
@@ -134,12 +133,10 @@
   <text x="60" y="147" class="headline primary">ganymede-agent</text>
   <text x="60" y="207" class="role secondary">task in / proof out</text>
 
-  <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
-
-  <text x="60" y="431" class="statement primary">code of mass</text>
-  <text x="60" y="484" class="statement primary">construction.</text>
+  <text x="60" y="431" class="statement primary">send task.</text>
+  <text x="60" y="484" class="statement primary">get proof.</text>
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <text x="60" y="686" class="footer secondary">jupiter &#183; io / europa / ganymede / callisto &#183; third orbit highlighted</text>
+  <text x="60" y="686" class="footer secondary">georgrybski&#8217;s machine identity &#183; under construction</text>
 </svg>
