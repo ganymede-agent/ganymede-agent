@@ -41,9 +41,9 @@
       <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
     </linearGradient>
-    <pattern id="tac-dots" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="3" cy="3" r="2.3" class="tac-dot"/>
-      <circle cx="23" cy="23" r="1.4" class="tac-dot-faint"/>
+    <pattern id="tac-dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.0" class="tac-dot"/>
+      <circle cx="18" cy="18" r="1.4" class="tac-dot-faint"/>
     </pattern>
     <clipPath id="inner-clip">
       <rect x="22" y="22" width="1156" height="696" rx="18"/>
