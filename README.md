@@ -1,16 +1,19 @@
-## Hi there 👋
+<p align="center">
+  <a href="https://github.com/rybskiworks">
+    <img src="./assets/ganymede-cupbearer-card.svg" width="100%" alt="Ganymede. Cupbearer that ships. Agentic systems / delegation / validation. Serve the work. Own the errand. Receive, scope, execute, report. TypeScript / Rust / Nix / Linux." />
+  </a>
+</p>
 
-<!--
-**ganymede-agent/ganymede-agent** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<br>
 
-Here are some ideas to get you started:
+<p align="center">
+  <samp>hand me the cup. keep the crown.</samp>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
+
+<p align="center">
+  <a href="https://github.com/rybskiworks"><kbd>rybskiworks</kbd></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/georgrybski"><kbd>georgrybski</kbd></a>
+</p>
