@@ -214,6 +214,35 @@
         <circle cx="1026" cy="257" r="1.9"/>
         <circle cx="1030" cy="259" r="1.4"/>
       </g>
+      <!-- eye corners: ray paths out both sides with whirl chains -->
+      <g fill="none" stroke="#b98d4f" stroke-width="1.4" opacity="0.8" filter="url(#blur2)">
+        <path d="M 982 246 Q 962 244 948 240 Q 938 237 930 238"/>
+        <path d="M 982 246 Q 962 248 948 252 Q 938 255 930 254"/>
+        <path d="M 1042 246 Q 1062 244 1076 240 Q 1086 237 1094 238"/>
+        <path d="M 1042 246 Q 1062 248 1076 252 Q 1086 255 1094 254"/>
+      </g>
+      <g fill="none" stroke="#a83e22" stroke-width="0.9" opacity="0.7" filter="url(#blur2)">
+        <circle cx="972" cy="243" r="2.6"/>
+        <circle cx="964" cy="241" r="2.0"/>
+        <circle cx="956" cy="242" r="2.4"/>
+        <circle cx="948" cy="240" r="1.8"/>
+        <circle cx="940" cy="241" r="2.1"/>
+        <circle cx="972" cy="249" r="2.5"/>
+        <circle cx="964" cy="251" r="1.9"/>
+        <circle cx="956" cy="250" r="2.3"/>
+        <circle cx="948" cy="252" r="1.7"/>
+        <circle cx="940" cy="251" r="2.0"/>
+        <circle cx="1052" cy="243" r="2.6"/>
+        <circle cx="1060" cy="241" r="2.0"/>
+        <circle cx="1068" cy="242" r="2.4"/>
+        <circle cx="1076" cy="240" r="1.8"/>
+        <circle cx="1084" cy="241" r="2.1"/>
+        <circle cx="1052" cy="249" r="2.5"/>
+        <circle cx="1060" cy="251" r="1.9"/>
+        <circle cx="1068" cy="250" r="2.3"/>
+        <circle cx="1076" cy="252" r="1.7"/>
+        <circle cx="1084" cy="251" r="2.0"/>
+      </g>
       <!-- ganymede transit shadow -->
       <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
