@@ -70,8 +70,8 @@
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
     .orbit-ganymede { fill: none; stroke: #c8d1db; stroke-width: 1.4; opacity: 0.85; }
     .moon { fill: #9aa5b1; opacity: 0.9; }
-    .moon-ganymede { fill: url(#whole-card-gradient); }
-    .moon-halo { fill: none; stroke: url(#whole-card-gradient); stroke-width: 1.2; opacity: 0.6; }
+    .moon-ganymede { fill: #0891b2; }
+    .moon-halo { fill: none; stroke: #0891b2; stroke-width: 1.2; opacity: 0.7; }
     .star { fill: #c8d1db; opacity: 0.55; }
     .backdrop { opacity: 0.5; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
@@ -102,6 +102,8 @@
       .orbit { stroke: #3a424c; opacity: 0.7; }
       .orbit-ganymede { stroke: #3a424c; opacity: 0.95; }
       .moon { fill: #5b6570; }
+      .moon-ganymede { fill: #22d3ee; }
+      .moon-halo { stroke: #22d3ee; }
       .star { fill: #3a424c; opacity: 0.9; }
     }
   </style>
@@ -144,6 +146,8 @@
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
       <ellipse cx="890" cy="196" rx="10" ry="6" fill="#10151c" opacity="0.45" filter="url(#blur2)"/>
+      <!-- east-lower shade: kills the bright SE curvature -->
+      <ellipse cx="1046" cy="272" rx="86" ry="80" fill="#10151c" opacity="0.38" filter="url(#blur8)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
@@ -163,5 +167,5 @@
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <text x="60" y="686" class="footer secondary">under construction</text>
+  <text x="60" y="686" class="footer secondary">code of mass construction</text>
 </svg>
