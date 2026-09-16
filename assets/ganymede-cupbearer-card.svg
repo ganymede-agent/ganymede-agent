@@ -3,7 +3,7 @@
   <desc id="desc">
     rybskiworks machine. Send task, get proof.
     Intake, scope, run, prove. Delegation-first, validation outside.
-    Backdrop: Jupiter and its moon Ganymede on its orbit.
+    Backdrop: Jupiter with its four large moons; one orbit highlighted.
   </desc>
 
   <defs>
@@ -56,7 +56,6 @@
     .moon { fill: #9aa5b1; opacity: 0.9; }
     .moon-ganymede { fill: url(#whole-card-gradient); }
     .moon-halo { fill: none; stroke: url(#whole-card-gradient); stroke-width: 1.2; opacity: 0.6; }
-    .moon-label { fill: #6b7683; font-size: 13px; }
     .star { fill: #c8d1db; opacity: 0.55; }
     .backdrop { opacity: 0.5; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
@@ -93,7 +92,6 @@
       .orbit { stroke: #3a424c; opacity: 0.7; }
       .orbit-ganymede { stroke: #3a424c; opacity: 0.95; }
       .moon { fill: #5b6570; }
-      .moon-label { fill: #8b949e; }
       .star { fill: #3a424c; opacity: 0.9; }
     }
   </style>
@@ -111,10 +109,10 @@
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
     <!-- moon orbits (behind the planet) -->
-    <ellipse cx="985" cy="185" rx="145" ry="38" transform="rotate(-14 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="160" ry="46" transform="rotate(-14 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="178" ry="55" transform="rotate(-14 985 185)" class="orbit-ganymede"/>
-    <ellipse cx="985" cy="185" rx="195" ry="68" transform="rotate(-14 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="145" ry="38" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="160" ry="46" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="985" cy="185" rx="178" ry="55" transform="rotate(-4 985 185)" class="orbit-ganymede"/>
+    <ellipse cx="985" cy="185" rx="195" ry="68" transform="rotate(-4 985 185)" class="orbit"/>
     <!-- Jupiter: banded body -->
     <circle cx="985" cy="185" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
     <g clip-path="url(#jup-clip)">
@@ -137,18 +135,17 @@
     </g>
     <circle cx="985" cy="185" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
     <!-- moons: io, europa, callisto, ganymede highlighted -->
-    <circle cx="1116.4" cy="168.8" r="4" class="moon"/>
-    <circle cx="832.2" cy="210.8" r="4" class="moon"/>
-    <circle cx="850.6" cy="263.5" r="4.5" class="moon"/>
-    <circle cx="1135.9" cy="123.4" r="11" class="moon-halo"/>
-    <circle cx="1135.9" cy="123.4" r="7" class="moon-ganymede"/>
-    <text x="1122" y="108" text-anchor="end" class="moon-label">ganymede</text>
+    <circle cx="1117.2" cy="191.9" r="4" class="moon"/>
+    <circle cx="830.0" cy="183.9" r="4" class="moon"/>
+    <circle cx="839.0" cy="239.0" r="4.5" class="moon"/>
+    <circle cx="1144.3" cy="150.6" r="11" class="moon-halo"/>
+    <circle cx="1144.3" cy="150.6" r="7" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
 
   <text x="60" y="147" class="headline primary">ganymede-agent</text>
-  <text x="60" y="207" class="role secondary">machine / delegation-first</text>
+  <text x="60" y="207" class="role secondary">task in / proof out</text>
 
   <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
 
