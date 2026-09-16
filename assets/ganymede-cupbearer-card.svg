@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
-    georgrybski machine identity. Send task, get proof.
+    georgrybski machine identity. Mass construction, minimal destruction.
     Backdrop: Jupiter, near-horizontal orbits, one highlighted.
   </desc>
 
@@ -19,7 +19,7 @@
       <stop offset="100%" stop-color="#5b6570" stop-opacity="0.35"/>
     </radialGradient>
     <clipPath id="jup-clip">
-      <circle cx="985" cy="185" r="140"/>
+      <circle cx="965" cy="193" r="140"/>
     </clipPath>
   </defs>
 
@@ -94,6 +94,7 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
+    <g transform="translate(-20,8)">
     <!-- moon orbits (behind the planet) -->
     <ellipse cx="985" cy="185" rx="150" ry="20" transform="rotate(-4 985 185)" class="orbit"/>
     <ellipse cx="985" cy="185" rx="165" ry="26" transform="rotate(-4 985 185)" class="orbit"/>
@@ -126,17 +127,18 @@
     <circle cx="834.0" cy="221.3" r="4.5" class="moon"/>
     <circle cx="1149.5" cy="159.9" r="11" class="moon-halo"/>
     <circle cx="1149.5" cy="159.9" r="7" class="moon-ganymede"/>
+    </g>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
 
   <text x="60" y="147" class="headline primary">ganymede-agent</text>
-  <text x="60" y="207" class="role secondary">task in / proof out</text>
+  <text x="60" y="207" class="role secondary">georgrybski&#8217;s machine identity</text>
 
-  <text x="60" y="431" class="statement primary">send task.</text>
-  <text x="60" y="484" class="statement primary">get proof.</text>
+  <text x="60" y="431" class="statement primary">mass construction,</text>
+  <text x="60" y="484" class="statement primary">minimal destruction.</text>
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <text x="60" y="686" class="footer secondary">georgrybski&#8217;s machine identity &#183; under construction</text>
+  <text x="60" y="686" class="footer secondary">under construction</text>
 </svg>
