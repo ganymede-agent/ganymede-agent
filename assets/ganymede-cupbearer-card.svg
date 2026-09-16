@@ -32,14 +32,6 @@
     <filter id="blur1" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="0.7"/>
     </filter>
-    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0" result="na"/>
-      <feComposite in="SourceGraphic" in2="na" operator="in" result="lit"/>
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n2"/>
-      <feColorMatrix in="n2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0" result="na2"/>
-      <feComposite in="lit" in2="na2" operator="out" result="out"/>
-    </filter>
     <linearGradient id="terminator" x1="0.2" y1="0.1" x2="0.85" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
       <stop offset="52%" stop-color="#000000" stop-opacity="0"/>
@@ -162,7 +154,6 @@
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
     <g clip-path="url(#jup-clip)">
-      <g filter="url(#grain)">
       <g filter="url(#band-wobble)">
       <rect x="825" y="53" width="280" height="30" class="cap-top"/>
       <rect x="825" y="83" width="280" height="12" class="b2a"/>
@@ -191,17 +182,13 @@
       <ellipse cx="935" cy="241" rx="5" ry="3" class="storm"/>
       <ellipse cx="1062" cy="170" rx="6" ry="3.5" class="storm"/>
       </g>
-      </g>
-      <!-- Great Red Spot: tight split flow, blurred, inner swirl, textured -->
+      <!-- Great Red Spot: tight split flow, blurred, inner swirl -->
       <path d="M 935 243 Q 970 236 986 231 Q 1000 226 1012 227 Q 1025 228 1039 232 Q 1056 237 1092 240" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
       <path d="M 935 249 Q 970 256 986 261 Q 1000 266 1012 265 Q 1025 264 1039 260 Q 1056 255 1092 252" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
-      <path d="M 982 231 L 990 236 L 982 240 Z M 1042 232 L 1034 237 L 1042 241 Z M 986 261 L 994 256 L 986 251 Z M 1038 260 L 1030 255 L 1038 251 Z" fill="#b98d4f" opacity="0.75" filter="url(#blur2)"/>
-      <g filter="url(#grain)">
-        <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
-        <ellipse cx="1012" cy="246" rx="21" ry="11.5" fill="none" stroke="#a83e22" stroke-width="1.3" opacity="0.75" filter="url(#blur2)"/>
-        <ellipse cx="1012" cy="246" rx="12" ry="6.5" fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.7" filter="url(#blur2)"/>
-        <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
-      </g>
+      <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
+      <ellipse cx="1012" cy="246" rx="21" ry="11.5" fill="none" stroke="#a83e22" stroke-width="1.3" opacity="0.75" filter="url(#blur2)"/>
+      <ellipse cx="1012" cy="246" rx="12" ry="6.5" fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.7" filter="url(#blur2)"/>
+      <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
       <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
