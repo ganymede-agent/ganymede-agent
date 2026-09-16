@@ -80,7 +80,7 @@
     .b5 { fill: #fbf6e8; }
     .b6 { fill: #bd7a38; }
     .b7 { fill: #f2e4c6; }
-    .cap-bot { fill: #e0cda4; }
+    .cap-bot { fill: #e9d9b8; }
     .fret { fill: none; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.65; }
     .storm { fill: #fbf6e8; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.9; }
     .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
@@ -118,7 +118,7 @@
       .b5 { fill: #65563c; }
       .b6 { fill: #604026; }
       .b7 { fill: #57462e; }
-      .cap-bot { fill: #413322; }
+      .cap-bot { fill: #4a3a26; }
       .fret { stroke: #8a6a42; }
       .storm { fill: #65563c; stroke: #8a6a42; }
       .spot { fill: #8a5a4a; stroke: #a87a63; }
@@ -174,6 +174,8 @@
       <path d="M 840 232 q 18 -6 36 1 t 36 -2 t 36 2 t 36 -2 t 36 1 t 36 -1 t 36 2" class="fret"/>
       <path d="M 845 240 q 22 5 44 -1 t 44 2 t 44 -3 t 44 2 t 44 0 t 40 -1" class="fret"/>
       <path d="M 850 103 q 20 -4 40 0 t 40 1 t 40 -2 t 40 1 t 40 0" class="fret"/>
+      <path d="M 835 295 q 20 -5 40 0 t 40 1 t 40 -2 t 40 2 t 40 -1 t 40 1 t 36 0" class="fret"/>
+      <path d="M 845 304 q 24 4 48 0 t 48 -2 t 48 2 t 48 -1 t 44 1" class="fret"/>
       <!-- small storms -->
       <ellipse cx="905" cy="173" rx="9" ry="5" class="storm"/>
       <ellipse cx="986" cy="234" rx="7" ry="4" class="storm"/>
@@ -181,6 +183,8 @@
       <ellipse cx="1062" cy="170" rx="6" ry="3.5" class="storm"/>
       </g>
       <!-- Great Red Spot -->
+      <ellipse cx="1012" cy="246" rx="38" ry="22" fill="none" stroke="#b98d4f" stroke-width="1.6" opacity="0.7" filter="url(#blur2)"/>
+      <path d="M 968 238 q 12 -8 26 -6 M 1056 254 q -12 8 -26 6" fill="none" stroke="#b98d4f" stroke-width="1.4" opacity="0.65" filter="url(#blur2)"/>
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
