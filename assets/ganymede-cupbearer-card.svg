@@ -29,18 +29,18 @@
     <filter id="blur2" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="1.6"/>
     </filter>
-    <linearGradient id="terminator" x1="0.9" y1="0.2" x2="0.1" y2="0.95">
-      <stop offset="0%" stop-color="#10151c" stop-opacity="0.48"/>
-      <stop offset="38%" stop-color="#000000" stop-opacity="0"/>
+    <linearGradient id="terminator" x1="1" y1="0.45" x2="0" y2="0.55">
+      <stop offset="0%" stop-color="#10151c" stop-opacity="0.52"/>
+      <stop offset="45%" stop-color="#000000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="trail-fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <mask id="trail-mask">
-      <path d="M 822.5 177.2 L 819.7 177.8 L 817.0 178.4 L 814.3 179.0 L 811.7 179.6 L 809.1 180.2 L 806.5 180.8 L 804.0 181.5 L 801.6 182.1 L 799.2 182.7 L 796.8 183.3 L 794.5 183.9 L 792.3 184.6 L 790.1 185.2 L 788.0 185.8 L 785.9 186.5 L 783.8 187.1 L 781.9 187.7 L 779.9 188.4 L 778.1 189.0 L 776.3 189.7 L 774.5 190.3 L 772.8 191.0 L 771.2 191.6 L 769.6 192.3 L 768.1 192.9 L 766.6 193.6 L 765.3 194.2 L 763.9 194.8 L 762.6 195.5 L 761.4 196.1 L 760.3 196.8 L 759.2 197.4 L 758.2 198.1 L 757.2 198.7 L 756.3 199.3 L 755.5 200.0 L 754.7 200.6 L 754.0 201.3 L 753.4 201.9 L 752.8 202.5 L 752.3 203.1 L 751.8 203.8 L 751.5 204.4 L 751.1 205.0 L 750.9 205.6 L 750.7 206.2 L 750.6 206.8 L 750.5 207.4 L 750.5 208.0" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 739.5 215.0 L 821.8 174.6 L 818.7 175.2 L 815.6 175.8 L 812.6 176.4 L 809.6 177.0 L 806.7 177.7 L 803.8 178.3 L 801.0 179.0 L 798.2 179.6 L 795.5 180.2 L 792.8 180.9 L 790.2 181.5 L 787.6 182.2 L 785.1 182.9 L 782.7 183.5 L 780.2 184.2 L 777.9 184.9 L 775.6 185.5 L 773.4 186.2 L 771.2 186.9 L 769.1 187.6 L 767.0 188.3 L 765.0 188.9 L 763.1 189.6 L 761.2 190.3 L 759.4 191.0 L 757.7 191.7 L 756.0 192.4 L 754.4 193.1 L 752.8 193.7 L 751.3 194.4 L 749.9 195.1 L 748.5 195.8 L 747.2 196.5 L 746.0 197.2 L 744.9 197.8 L 743.8 198.5 L 742.7 199.2 L 741.8 199.9 L 740.9 200.6 L 740.1 201.2 L 739.3 201.9 L 738.6 202.6 L 738.0 203.2 L 737.4 203.9 L 737.0 204.5 L 736.6 205.2 L 736.2 205.9 L 735.9 206.5 L 735.7 207.1 L 735.6 207.8 L 735.6 208.4 L 735.6 209.0 L 735.6 209.7 L 735.8 210.3 L 736.0 210.9 L 736.3 211.5 L 736.7 212.1 L 737.1 212.7 L 737.6 213.3 L 738.1 213.9 L 738.8 214.5 L 739.5 215.0" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
     </mask>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
@@ -119,9 +119,9 @@
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
     <!-- trailing arc: moon moves west, trail fades behind (far side) -->
-    <ellipse cx="965" cy="193" rx="215" ry="34" transform="rotate(-4 965 193)" fill="none" stroke="none"/>
+    <ellipse cx="965" cy="193" rx="230" ry="36" transform="rotate(-4 965 193)" fill="none" stroke="none"/>
     <g mask="url(#trail-mask)">
-      <ellipse cx="965" cy="193" rx="215" ry="34" transform="rotate(-4 965 193)" class="orbit-ganymede"/>
+      <ellipse cx="965" cy="193" rx="230" ry="36" transform="rotate(-4 965 193)" class="orbit-ganymede"/>
     </g>
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
@@ -150,8 +150,8 @@
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- ganymede: small, highlighted, west elongation -->
-    <circle cx="750.5" cy="208.0" r="8" class="moon-halo"/>
-    <circle cx="750.5" cy="208.0" r="4.5" class="moon-ganymede"/>
+    <circle cx="739.5" cy="215.0" r="8" class="moon-halo"/>
+    <circle cx="739.5" cy="215.0" r="4.5" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
