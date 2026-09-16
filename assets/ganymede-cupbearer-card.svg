@@ -54,7 +54,7 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <mask id="trail-mask">
-      <path d="M 815.9 189.1 L 811.1 189.8 L 806.4 190.5 L 801.7 191.2 L 797.0 191.9 L 792.4 192.6 L 787.9 193.3 L 783.4 194.0 L 779.0 194.7 L 774.6 195.3 L 770.3 196.0 L 766.1 196.7 L 761.9 197.4 L 757.7 198.1 L 753.7 198.8 L 749.7 199.5 L 745.7 200.1 L 741.9 200.8 L 738.1 201.5 L 734.3 202.2 L 730.7 202.8 L 727.1 203.5 L 723.5 204.2 L 720.1 204.8 L 716.7 205.5 L 713.4 206.1 L 710.2 206.8 L 707.1 207.4 L 704.0 208.1 L 701.0 208.7 L 698.1 209.3 L 695.3 210.0 L 692.5 210.6 L 689.9 211.2 L 687.3 211.8 L 684.8 212.4 L 682.4 213.0 L 680.1 213.6 L 677.9 214.2 L 675.7 214.8 L 673.7 215.3 L 671.7 215.9 L 669.8 216.5 L 668.0 217.0 L 666.3 217.6 L 664.7 218.1 L 663.2 218.6 L 661.8 219.1 L 660.5 219.7 L 659.2 220.2 L 658.1 220.7 L 657.0 221.1 L 656.1 221.6 L 655.2 222.1 L 654.5 222.6 L 653.8 223.0 L 653.2 223.5 L 652.7 223.9 L 652.3 224.3 L 652.0 224.7 L 651.8 225.1 L 651.7 225.5 L 651.7 225.9 L 651.8 226.3 L 652.0 226.7 L 652.3 227.0 L 652.6 227.4 L 653.1 227.7 L 653.7 228.0 L 654.3 228.3 L 655.1 228.7 L 655.9 228.9 L 656.9 229.2 L 657.9 229.5 L 659.0 229.8 L 660.3 230.0 L 661.6 230.2 L 663.0 230.5 L 664.5 230.7" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 816.1 190.9 L 811.3 191.6 L 806.6 192.2 L 801.9 192.9 L 797.2 193.6 L 792.6 194.3 L 788.1 194.9 L 783.6 195.6 L 779.2 196.3 L 774.8 196.9 L 770.5 197.6 L 766.2 198.3 L 762.0 198.9 L 757.9 199.6 L 753.8 200.3 L 749.8 200.9 L 745.9 201.6 L 742.0 202.2 L 738.2 202.9 L 734.5 203.5 L 730.8 204.2 L 727.2 204.8 L 723.7 205.4 L 720.2 206.1 L 716.8 206.7 L 713.5 207.3 L 710.3 207.9 L 707.2 208.6 L 704.1 209.2 L 701.1 209.8 L 698.2 210.4 L 695.4 211.0 L 692.7 211.6 L 690.0 212.2 L 687.4 212.7 L 684.9 213.3 L 682.5 213.9 L 680.2 214.4 L 678.0 215.0 L 675.8 215.5 L 673.8 216.1 L 671.8 216.6 L 669.9 217.1 L 668.1 217.7 L 666.4 218.2 L 664.8 218.7 L 663.3 219.2 L 661.9 219.7 L 660.5 220.1 L 659.3 220.6 L 658.1 221.1 L 657.1 221.5 L 656.1 222.0 L 655.3 222.4 L 654.5 222.8 L 653.8 223.3 L 653.2 223.7 L 652.7 224.1 L 652.3 224.5 L 652.0 224.8 L 651.8 225.2 L 651.7 225.6 L 651.7 225.9 L 651.8 226.3 L 652.0 226.6 L 652.3 226.9 L 652.6 227.2 L 653.1 227.5 L 653.7 227.8 L 654.3 228.1 L 655.1 228.4 L 655.9 228.6 L 656.8 228.9 L 657.9 229.1 L 659.0 229.3 L 660.2 229.6 L 661.5 229.8 L 662.9 230.0" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
     </mask>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
@@ -82,7 +82,7 @@
     .b7 { fill: #f2e4c6; }
     .cap-bot { fill: #e0cda4; }
     .fret { fill: none; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.65; }
-    .storm { fill: #ffffff; stroke: #d9c49a; stroke-width: 1.1; opacity: 0.95; }
+    .storm { fill: #fbf6e8; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.9; }
     .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
     .spot-inner { fill: #f0936b; opacity: 0.85; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
@@ -120,7 +120,7 @@
       .b7 { fill: #57462e; }
       .cap-bot { fill: #413322; }
       .fret { stroke: #8a6a42; }
-      .storm { fill: #efe6d2; stroke: #8a6a42; stroke-width: 1.1; }
+      .storm { fill: #65563c; stroke: #8a6a42; }
       .spot { fill: #8a5a4a; stroke: #a87a63; }
       .spot-inner { fill: #a87a63; opacity: 0.6; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
@@ -147,9 +147,9 @@
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
     <!-- trailing arc: moon moves west, trail fades behind (far side) -->
-    <ellipse cx="965" cy="193" rx="315" ry="22" transform="rotate(-6 965 193)" fill="none" stroke="none"/>
+    <ellipse cx="965" cy="193" rx="315" ry="20" transform="rotate(-6 965 193)" fill="none" stroke="none"/>
     <g mask="url(#trail-mask)">
-      <ellipse cx="965" cy="193" rx="315" ry="22" transform="rotate(-6 965 193)" class="orbit-ganymede"/>
+      <ellipse cx="965" cy="193" rx="315" ry="20" transform="rotate(-6 965 193)" class="orbit-ganymede"/>
     </g>
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
@@ -184,7 +184,7 @@
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
-      <ellipse cx="884" cy="228" rx="5.5" ry="7" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
+      <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
@@ -193,8 +193,8 @@
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- ganymede: small, highlighted, west elongation -->
-    <circle cx="664.5" cy="230.7" r="8" class="moon-halo"/>
-    <circle cx="664.5" cy="230.7" r="4.5" class="moon-ganymede"/>
+    <circle cx="662.9" cy="230.0" r="8" class="moon-halo"/>
+    <circle cx="662.9" cy="230.0" r="4.5" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
