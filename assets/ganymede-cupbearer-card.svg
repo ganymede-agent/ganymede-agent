@@ -213,8 +213,7 @@
         <path d="M 996 244 q 6 -2 12 0 t 12 0 M 998 249 q 8 2 16 0" fill="none" stroke="#a83e22" stroke-width="0.9" opacity="0.7"/>
         <ellipse cx="1012" cy="246" rx="13" ry="7" class="spot-inner"/>
       </g>
-      <!-- hollow: pale collar trailing east of spot (reference) -->
-      <path d="M 1036 240 Q 1052 238 1064 242 Q 1072 246 1064 250 Q 1052 254 1036 252" fill="none" stroke="#ddd1c1" stroke-width="2" opacity="0.8" filter="url(#blur2)"/>
+
       <!-- ganymede transit shadow -->
       <ellipse cx="874" cy="220" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
