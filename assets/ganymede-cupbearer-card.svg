@@ -150,7 +150,7 @@
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
       <!-- east-limb crescent: dark ellipse overlapping the limb, clipped to disk -->
-      <ellipse cx="1084" cy="206" rx="68" ry="138" transform="rotate(-8 1084 206)" fill="#000000" opacity="0.5" filter="url(#blur8)"/>
+      <path d="M 965 53 A 75 140 0 0 1 965 333 A 140 140 0 0 0 965 53 Z" fill="#000000" opacity="0.5" filter="url(#blur2)"/>
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- ganymede: small, highlighted, west elongation -->
