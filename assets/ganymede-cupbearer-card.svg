@@ -145,12 +145,12 @@
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
-      <ellipse cx="890" cy="196" rx="10" ry="26" transform="rotate(-6 890 196)" fill="#2e1a08" opacity="0.55" filter="url(#blur2)"/>
+      <ellipse cx="890" cy="196" rx="8" ry="8" fill="#2e1a08" opacity="0.68" filter="url(#blur2)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
       <!-- east-limb crescent: dark ellipse overlapping the limb, clipped to disk -->
-      <path d="M 965 53 A 45 140 0 0 1 965 333 A 140 140 0 0 0 965 53 Z" fill="#000000" opacity="0.55" filter="url(#blur2)"/>
+      <path d="M 965 53 A 115 140 0 0 1 965 333 A 140 140 0 0 0 965 53 Z" fill="#000000" opacity="0.55" filter="url(#blur2)"/>
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- ganymede: small, highlighted, west elongation -->
