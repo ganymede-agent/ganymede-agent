@@ -2,7 +2,7 @@
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
     georgrybski machine identity. First moon that ships.
-    Backdrop: Jupiter, trailing orbit arc, small moon west with transit shadow.
+    Backdrop: Jupiter, small moon west with transit shadow.
   </desc>
 
   <defs>
@@ -51,14 +51,6 @@
     <clipPath id="inner-clip">
       <rect x="22" y="22" width="1156" height="696" rx="18"/>
     </clipPath>
-    <linearGradient id="trail-fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <mask id="trail-mask">
-      <path d="M 644.5 228.4 L 641.4 229.0 L 638.3 229.5 L 635.4 230.1 L 632.5 230.7 L 629.8 231.3 L 627.1 231.8 L 624.6 232.4 L 622.2 233.0 L 619.8 233.5 L 617.6 234.1 L 615.5 234.6 L 613.4 235.1 L 611.5 235.7 L 609.7 236.2 L 608.0 236.7 L 606.5 237.3 L 605.0 237.8 L 603.6 238.3 L 602.4 238.8 L 601.2 239.3 L 600.2 239.7 L 599.3 240.2 L 598.4 240.7 L 597.7 241.2 L 597.2 241.6 L 596.7 242.1 L 596.3 242.5 L 596.1 243.0 L 595.9 243.4 L 595.9 243.8 L 596.0 244.2" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
-    </mask>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
     </clipPath>
@@ -93,7 +85,6 @@
     .spot { fill: #c08030; stroke: #8a5a22; stroke-width: 2; }
     .spot-inner { fill: #e0aa58; opacity: 0.9; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
-    .orbit-ganymede { fill: none; stroke: #c8d1db; stroke-width: 1.4; opacity: 0.85; }
     .moon { fill: #9aa5b1; opacity: 0.9; }
     .moon-ganymede { fill: #0891b2; }
     .moon-halo { fill: none; stroke: #0891b2; stroke-width: 1.2; opacity: 0.7; }
@@ -135,7 +126,6 @@
       .spot { fill: #7a5a26; stroke: #8a6a42; }
       .spot-inner { fill: #a8834a; opacity: 0.7; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
-      .orbit-ganymede { stroke: #3a424c; opacity: 0.95; }
       .moon { fill: #5b6570; }
       .moon-ganymede { fill: #22d3ee; }
       .moon-halo { stroke: #22d3ee; }
@@ -157,11 +147,6 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
-    <!-- trailing arc: moon moves west, trail fades behind (far side) -->
-    <ellipse cx="965" cy="218" rx="370" ry="24" transform="rotate(-4 965 218)" fill="none" stroke="none"/>
-    <g mask="url(#trail-mask)">
-      <ellipse cx="965" cy="218" rx="370" ry="24" transform="rotate(-4 965 218)" class="orbit-ganymede"/>
-    </g>
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
     <g clip-path="url(#jup-clip)">
