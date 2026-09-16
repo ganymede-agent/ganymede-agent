@@ -14,7 +14,7 @@
       <stop offset="100%" class="grad-blue-edge"/>
     </linearGradient>
     <radialGradient id="planet-shade" cx="30%" cy="32%" r="85%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="100%" stop-color="#3b2312" stop-opacity="0.28"/>
     </radialGradient>
@@ -38,8 +38,9 @@
       <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
     </linearGradient>
-    <pattern id="tac-dots" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1.1" class="tac-dot"/>
+    <pattern id="tac-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.9" class="tac-dot"/>
+      <circle cx="13" cy="13" r="0.9" class="tac-dot-faint"/>
     </pattern>
     <linearGradient id="trail-fade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
@@ -64,14 +65,14 @@
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
     .jup-base { fill: #f3e7d3; }
-    .b1 { fill: #f7ecd4; }
-    .b2 { fill: #eebd7f; }
-    .b3 { fill: #f6e3c0; }
-    .b4 { fill: #d9984f; }
-    .b5 { fill: #f2d49e; }
-    .b6 { fill: #c98544; }
-    .b7 { fill: #ecca97; }
-    .b8 { fill: #d99f58; }
+    .b1 { fill: #f4e3c2; }
+    .b2 { fill: #e2a55f; }
+    .b3 { fill: #f0d8ae; }
+    .b4 { fill: #cf8a44; }
+    .b5 { fill: #ebcb8f; }
+    .b6 { fill: #bd7a38; }
+    .b7 { fill: #e6c086; }
+    .b8 { fill: #cc9047; }
     .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
     .spot-inner { fill: #f0936b; opacity: 0.85; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
@@ -81,7 +82,8 @@
     .moon-halo { fill: none; stroke: #0891b2; stroke-width: 1.2; opacity: 0.7; }
     .star { fill: #c8d1db; opacity: 0.55; }
     .backdrop { opacity: 0.5; }
-    .tac-dot { fill: #1f2328; opacity: 0.10; }
+    .tac-dot { fill: #1f2328; opacity: 0.22; }
+    .tac-dot-faint { fill: #1f2328; opacity: 0.12; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .signature { font-size: 26px; font-weight: 700; letter-spacing: 1.2px; }
     .headline { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
@@ -113,7 +115,8 @@
       .moon-ganymede { fill: #22d3ee; }
       .moon-halo { stroke: #22d3ee; }
       .star { fill: #3a424c; opacity: 0.9; }
-      .tac-dot { fill: #f0f6fc; opacity: 0.08; }
+      .tac-dot { fill: #f0f6fc; opacity: 0.20; }
+      .tac-dot-faint { fill: #f0f6fc; opacity: 0.10; }
     }
   </style>
 
@@ -154,7 +157,7 @@
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
-      <ellipse cx="890" cy="196" rx="8" ry="8" fill="#2e1a08" opacity="0.85" filter="url(#blur2)"/>
+      <ellipse cx="890" cy="196" rx="8" ry="8" fill="#160b03" opacity="0.95" filter="url(#blur2)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
@@ -178,5 +181,5 @@
 
   <text x="60" y="686" class="footer secondary">code of mass construction</text>
 
-  <rect width="1200" height="740" rx="24" fill="url(#tac-dots)" opacity="0.5" pointer-events="none"/>
+  <rect width="1200" height="740" rx="24" fill="url(#tac-dots)" opacity="0.8" pointer-events="none"/>
 </svg>
