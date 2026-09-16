@@ -187,5 +187,5 @@
 
   <text x="60" y="686" class="footer secondary">code of mass construction</text>
 
-  <g clip-path="url(#inner-clip)"><rect x="22" y="22" width="1156" height="696" fill="url(#tac-dots)" opacity="0.8" pointer-events="none"/></g>
+  <g clip-path="url(#inner-clip)"><rect x="22" y="22" width="1156" height="696" fill="url(#tac-dots)" opacity="0.45" pointer-events="none"/></g>
 </svg>
