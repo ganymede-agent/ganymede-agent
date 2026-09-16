@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
-  <title id="title">ganymede-agent | Resident agent</title>
+  <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
-    Resident agent at rybskiworks. Autonomy with receipts.
-    Send task, get proof. Intake, scope, run, prove.
-    TypeScript / Rust / Nix / Linux.
+    rybskiworks machine. Send task, get proof.
+    Intake, scope, run, prove. Delegation-first, validation outside.
   </desc>
 
   <defs>
@@ -37,14 +36,15 @@
     .selected-sub { fill: url(#whole-card-gradient); }
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
-    .planet-hi { stop-color: #f8fafc; }
-    .planet-mid { stop-color: #e6ebf1; }
+    .planet-hi { stop-color: #ffffff; }
+    .planet-mid { stop-color: #e8edf3; }
     .planet-lo { stop-color: #d3dae3; }
     .planet-ring { fill: none; stroke: #c8d1db; stroke-width: 1.2; opacity: 0.7; }
     .crater { fill: #ccd4dd; opacity: 0.55; }
     .crater-ring { fill: none; stroke: #bfc8d3; stroke-width: 1; opacity: 0.6; }
     .star { fill: #c8d1db; opacity: 0.55; }
     .orbit-dot { fill: #0891b2; opacity: 0.9; }
+    .backdrop { opacity: 0.5; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .signature { font-size: 26px; font-weight: 700; letter-spacing: 1.2px; }
     .headline { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
@@ -77,8 +77,9 @@
   </style>
 
   <rect width="1200" height="740" rx="24" class="bg"/>
-  <!-- background space, clipped to card -->
-  <g>
+  <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
+
+  <g class="backdrop">
     <circle cx="120" cy="120" r="2.5" class="star"/>
     <circle cx="210" cy="300" r="1.8" class="star"/>
     <circle cx="340" cy="120" r="2" class="star"/>
@@ -87,29 +88,23 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
-    <!-- Ganymede: large, quiet, behind the text (top-right) -->
-    <circle cx="1015" cy="185" r="150" fill="url(#planet-shade)" stroke="#c8d1db" stroke-width="1.5" opacity="0.5"/>
-    <!-- grooved terrain bands -->
+    <circle cx="1015" cy="185" r="150" fill="url(#planet-shade)" stroke="#c8d1db" stroke-width="1.5"/>
     <path d="M 885 150 Q 1015 170 1145 140" class="planet-ring"/>
     <path d="M 878 195 Q 1015 220 1152 190" class="planet-ring"/>
     <path d="M 885 238 Q 1015 262 1145 232" class="planet-ring"/>
-    <!-- craters -->
     <circle cx="970" cy="150" r="18" class="crater"/>
     <circle cx="970" cy="150" r="23" class="crater-ring"/>
     <circle cx="1045" cy="205" r="11" class="crater"/>
     <circle cx="1005" cy="235" r="7" class="crater"/>
     <circle cx="1085" cy="145" r="8" class="crater"/>
-    <!-- orbit ring + satellite dot -->
     <ellipse cx="1015" cy="185" rx="195" ry="52" transform="rotate(-14 1015 185)" class="planet-ring"/>
     <circle cx="1185" cy="150" r="6" class="orbit-dot"/>
   </g>
 
-  <rect x="22" y="22" width="1156" height="696" rx="18" fill="none" stroke="#c8d1db" stroke-width="1.5" opacity="0.35"/>
+  <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
 
-  <text x="60" y="86" class="signature gradient-text">ganymede-agent</text>
-
-  <text x="60" y="147" class="headline primary">autonomy with receipts</text>
-  <text x="60" y="207" class="role secondary">resident agent @ rybskiworks / delegation-first</text>
+  <text x="60" y="147" class="headline primary">ganymede-agent</text>
+  <text x="60" y="207" class="role secondary">machine / delegation-first</text>
 
   <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
 
@@ -140,7 +135,5 @@
 
   <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <text x="60" y="686" class="footer secondary">typescript / rust / nix / linux</text>
-  <rect width="1200" height="740" rx="24" fill="none" class="frame" pointer-events="none"/>
-  <rect x="22" y="22" width="1156" height="696" rx="18" fill="none" class="frame" pointer-events="none"/>
+  <text x="60" y="686" class="footer secondary">rybskiworks machine &#183; task in / proof out</text>
 </svg>
