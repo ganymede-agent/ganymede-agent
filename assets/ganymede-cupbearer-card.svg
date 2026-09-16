@@ -70,21 +70,25 @@
     .gradient-text { fill: url(#whole-card-gradient); }
     .grad-blue-edge { stop-color: #0891b2; }
     .grad-red-core { stop-color: #8250df; }
-    .jup-base { fill: #f3e7d3; }
-    .cap-top { fill: #e9d9b8; }
-    .b2a { fill: #f8f0dd; }
-    .b2b { fill: #e2a55f; }
-    .b2c { fill: #f8f0dd; }
-    .b3 { fill: #f4ead2; }
-    .b4 { fill: #cf8a44; }
-    .b5 { fill: #fbf6e8; }
-    .b6 { fill: #bd7a38; }
-    .b7 { fill: #f2e4c6; }
-    .cap-bot { fill: #e9d9b8; }
-    .fret { fill: none; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.65; }
-    .storm { fill: #fbf6e8; stroke: #b98d4f; stroke-width: 1.4; opacity: 0.9; }
-    .spot { fill: #d95f3b; stroke: #a83e22; stroke-width: 2; }
-    .spot-inner { fill: #f0936b; opacity: 0.85; }
+    .jup-base { fill: #d8cfc2; }
+    .cap-top { fill: #8f8878; }
+    .b2a { fill: #b5a691; }
+    .b2b { fill: #c9a37e; }
+    .b2c { fill: #b5a691; }
+    .b3 { fill: #ccb59b; }
+    .b4 { fill: #a28162; }
+    .b5 { fill: #e3dcd7; }
+    .b6 { fill: #9f806b; }
+    .b7 { fill: #c9bdaa; }
+    .cap-bot { fill: #8f8878; }
+    .neb-wisp { fill: #d8cbb8; opacity: 0.85; }
+    .seb-wisp { fill: #ddd1c1; opacity: 0.85; }
+    .fret { fill: none; stroke: #7a6a58; stroke-width: 1.4; opacity: 0.6; }
+    .fret-warm { fill: none; stroke: #a28162; stroke-width: 1.5; opacity: 0.7; }
+    .storm { fill: #ede8d8; stroke: #7a6a58; stroke-width: 1.2; opacity: 0.9; }
+    .storm-warm { fill: #f5cfaa; stroke: #a28162; stroke-width: 1.2; opacity: 0.9; }
+    .spot { fill: #c08030; stroke: #8a5a22; stroke-width: 2; }
+    .spot-inner { fill: #e0aa58; opacity: 0.9; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
     .orbit-ganymede { fill: none; stroke: #c8d1db; stroke-width: 1.4; opacity: 0.85; }
     .moon { fill: #9aa5b1; opacity: 0.9; }
@@ -108,21 +112,25 @@
       .secondary { fill: #a1abb5; }
       .grad-blue-edge { stop-color: #22d3ee; }
       .grad-red-core { stop-color: #d2a8ff; }
-      .jup-base { fill: #2c2318; }
-      .cap-top { fill: #4a3a26; }
-      .b2a { fill: #5a4a33; }
-      .b2b { fill: #6b4a26; }
-      .b2c { fill: #54402c; }
-      .b3 { fill: #5c4c34; }
-      .b4 { fill: #6e4c28; }
-      .b5 { fill: #65563c; }
-      .b6 { fill: #604026; }
-      .b7 { fill: #57462e; }
-      .cap-bot { fill: #4a3a26; }
-      .fret { stroke: #8a6a42; }
-      .storm { fill: #65563c; stroke: #8a6a42; }
-      .spot { fill: #8a5a4a; stroke: #a87a63; }
-      .spot-inner { fill: #a87a63; opacity: 0.6; }
+      .jup-base { fill: #2e2c28; }
+      .cap-top { fill: #3a362e; }
+      .b2a { fill: #453f34; }
+      .b2b { fill: #4e4030; }
+      .b2c { fill: #453f34; }
+      .b3 { fill: #4c4436; }
+      .b4 { fill: #54402e; }
+      .b5 { fill: #57534a; }
+      .b6 { fill: #503c2c; }
+      .b7 { fill: #4c4436; }
+      .cap-bot { fill: #3a362e; }
+      .neb-wisp { fill: #5a5044; }
+      .seb-wisp { fill: #5c554b; }
+      .fret { stroke: #6a6054; }
+      .fret-warm { stroke: #7a5c38; }
+      .storm { fill: #57534a; stroke: #6a6054; }
+      .storm-warm { fill: #6e5a38; stroke: #7a5c38; }
+      .spot { fill: #7a5a26; stroke: #8a6a42; }
+      .spot-inner { fill: #a8834a; opacity: 0.7; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
       .orbit-ganymede { stroke: #3a424c; opacity: 0.95; }
       .moon { fill: #5b6570; }
@@ -176,19 +184,50 @@
       <path d="M 850 103 q 20 -4 40 0 t 40 1 t 40 -2 t 40 1 t 40 0" class="fret"/>
       <path d="M 835 295 q 20 -5 40 0 t 40 1 t 40 -2 t 40 2 t 40 -1 t 40 1 t 36 0" class="fret"/>
       <path d="M 845 304 q 24 4 48 0 t 48 -2 t 48 2 t 48 -1 t 44 1" class="fret"/>
+      <!-- mottled pores in zones/caps (reference: pocked cream bands) -->
+      <g fill="#7a6a58" opacity="0.35">
+        <ellipse cx="880" cy="140" rx="5" ry="2.5"/>
+        <ellipse cx="920" cy="146" rx="3.5" ry="2"/>
+        <ellipse cx="970" cy="138" rx="4.5" ry="2.2"/>
+        <ellipse cx="1020" cy="144" rx="3" ry="1.8"/>
+        <ellipse cx="890" cy="205" rx="4" ry="2"/>
+        <ellipse cx="950" cy="210" rx="3" ry="1.6"/>
+        <ellipse cx="1000" cy="205" rx="5" ry="2.2"/>
+        <ellipse cx="1050" cy="210" rx="3.5" ry="1.8"/>
+        <ellipse cx="900" cy="268" rx="4" ry="2"/>
+        <ellipse cx="960" cy="272" rx="5" ry="2.2"/>
+        <ellipse cx="1020" cy="268" rx="3.5" ry="1.8"/>
+        <ellipse cx="880" cy="300" rx="4.5" ry="2"/>
+        <ellipse cx="940" cy="306" rx="3.5" ry="1.8"/>
+        <ellipse cx="1000" cy="300" rx="4" ry="2"/>
+      </g>
+      <!-- NEB/SEB chevron waves (reference: ragged brown-white boundaries) -->
+      <path d="M 830 168 l 14 -5 l 14 5 l 14 -6 l 14 6 l 14 -5 l 14 5 l 14 -6 l 14 6 l 14 -5 l 14 5 l 14 -6 l 14 6 l 14 -5" class="fret-warm"/>
+      <path d="M 830 184 q 16 -6 32 0 t 32 2 t 32 -3 t 32 2 t 32 -2 t 32 1 t 32 -1 t 30 0" class="fret-warm"/>
+      <path d="M 832 222 l 13 5 l 13 -5 l 13 6 l 13 -6 l 13 5 l 13 -5 l 13 6 l 13 -6 l 13 5 l 13 -5 l 13 6 l 13 -6" class="fret-warm"/>
+      <path d="M 832 246 q 16 6 32 0 t 32 -2 t 32 3 t 32 -2 t 32 2 t 32 -1 t 32 1 t 30 0" class="fret-warm"/>
+      <!-- white wisp streaks inside NEB/SEB -->
+      <ellipse cx="940" cy="174" rx="52" ry="6" class="neb-wisp" filter="url(#blur2)"/>
+      <ellipse cx="1030" cy="180" rx="40" ry="5" class="neb-wisp" filter="url(#blur2)"/>
+      <ellipse cx="995" cy="234" rx="55" ry="6" class="seb-wisp" filter="url(#blur2)"/>
+      <ellipse cx="905" cy="240" rx="38" ry="5" class="seb-wisp" filter="url(#blur2)"/>
+      <!-- festoons hanging below NEB (reference) -->
+      <path d="M 900 187 q 4 10 -2 16 q -5 5 -9 2 M 900 187 q 8 6 6 14" class="fret-warm"/>
+      <path d="M 1040 187 q 4 10 -2 16 q -5 5 -9 2 M 1040 187 q 8 6 6 14" class="fret-warm"/>
       <!-- small storms -->
       <ellipse cx="905" cy="173" rx="9" ry="5" class="storm"/>
       <ellipse cx="986" cy="234" rx="7" ry="4" class="storm"/>
       <ellipse cx="935" cy="241" rx="5" ry="3" class="storm"/>
       <ellipse cx="1062" cy="170" rx="6" ry="3.5" class="storm"/>
+
       </g>
       <!-- Great Red Spot: tight split flow, blurred, inner swirl -->
-      <path d="M 935 243 Q 970 236 986 231 Q 1000 226 1012 227 Q 1025 228 1039 232 Q 1056 237 1092 240" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
-      <path d="M 935 249 Q 970 256 986 261 Q 1000 266 1012 265 Q 1025 264 1039 260 Q 1056 255 1092 252" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
+      <path d="M 935 243 Q 968 237 984 233 Q 996 229 1012 230 Q 1028 231 1040 235 Q 1056 239 1092 241" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
+      <path d="M 935 249 Q 968 255 984 259 Q 996 263 1012 262 Q 1028 261 1040 257 Q 1056 253 1092 251" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
       <!-- eye outline: thin streamlines hugging the spot, closing the triangles -->
       <g fill="none" stroke="#b98d4f" stroke-width="1.2" opacity="0.95">
-        <path d="M 958 240 Q 976 234 988 230 Q 1000 225 1012 226 Q 1024 227 1036 231 Q 1048 235 1066 239"/>
-        <path d="M 958 252 Q 976 258 988 262 Q 1000 267 1012 266 Q 1024 265 1036 261 Q 1048 257 1066 253"/>
+        <path d="M 960 241 Q 977 236 989 232 Q 1000 228 1012 229 Q 1024 229 1035 233 Q 1047 237 1064 240"/>
+        <path d="M 960 251 Q 977 256 989 260 Q 1000 264 1012 263 Q 1024 263 1035 259 Q 1047 255 1064 252"/>
         <path d="M 950 246 Q 964 243 976 242 M 1048 242 Q 1060 243 1074 246"/>
         <path d="M 950 246 Q 964 249 976 250 M 1048 250 Q 1060 249 1074 246"/>
       </g>
@@ -255,11 +294,13 @@
         <circle cx="1058" cy="246" r="1.0"/>
         <circle cx="1066" cy="246" r="0.8"/>
       </g>
-      <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
-      <ellipse cx="1012" cy="246" rx="21" ry="11.5" fill="none" stroke="#a83e22" stroke-width="1.3" opacity="0.75" filter="url(#blur2)"/>
-      <ellipse cx="1012" cy="246" rx="12" ry="6.5" fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.7" filter="url(#blur2)"/>
+      <ellipse cx="1012" cy="246" rx="24" ry="14" class="spot"/>
+      <ellipse cx="1012" cy="246" rx="17" ry="9.5" fill="none" stroke="#a83e22" stroke-width="1.3" opacity="0.75" filter="url(#blur2)"/>
+      <ellipse cx="1012" cy="246" rx="10" ry="5.5" fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.7" filter="url(#blur2)"/>
       <path d="M 996 244 q 6 -2 12 0 t 12 0 M 998 249 q 8 2 16 0" fill="none" stroke="#a83e22" stroke-width="0.9" opacity="0.8"/>
-      <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
+      <ellipse cx="1012" cy="246" rx="13" ry="7" class="spot-inner"/>
+      <!-- hollow: pale collar trailing east of spot (reference) -->
+      <path d="M 1036 240 Q 1052 238 1064 242 Q 1072 246 1064 250 Q 1052 254 1036 252" fill="none" stroke="#ddd1c1" stroke-width="2" opacity="0.8" filter="url(#blur2)"/>
       <!-- ganymede transit shadow -->
       <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
