@@ -186,65 +186,9 @@
       <path d="M 935 243 Q 970 236 986 231 Q 1000 226 1012 227 Q 1025 228 1039 232 Q 1056 237 1092 240" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
       <path d="M 935 249 Q 970 256 986 261 Q 1000 266 1012 265 Q 1025 264 1039 260 Q 1056 255 1092 252" fill="none" stroke="#b98d4f" stroke-width="1.8" opacity="0.9" filter="url(#blur2)"/>
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
+      <ellipse cx="1012" cy="246" rx="21" ry="11.5" fill="none" stroke="#a83e22" stroke-width="1.3" opacity="0.75" filter="url(#blur2)"/>
+      <ellipse cx="1012" cy="246" rx="12" ry="6.5" fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.7" filter="url(#blur2)"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
-      <!-- whirl-chain around the rim: small irregular enchained circles -->
-      <g fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.95">
-        <circle cx="986" cy="236" r="3.2"/>
-        <circle cx="990" cy="233" r="2.4"/>
-        <circle cx="994" cy="236" r="2.8"/>
-        <circle cx="998" cy="232" r="2.0"/>
-        <circle cx="1002" cy="235" r="2.6"/>
-        <circle cx="1006" cy="232" r="1.8"/>
-        <circle cx="1010" cy="234" r="2.4"/>
-        <circle cx="1014" cy="231" r="1.7"/>
-        <circle cx="1018" cy="234" r="2.2"/>
-        <circle cx="1022" cy="232" r="1.6"/>
-        <circle cx="1026" cy="235" r="2.0"/>
-        <circle cx="1030" cy="233" r="1.5"/>
-        <circle cx="986" cy="256" r="3.0"/>
-        <circle cx="990" cy="259" r="2.3"/>
-        <circle cx="994" cy="256" r="2.7"/>
-        <circle cx="998" cy="260" r="1.9"/>
-        <circle cx="1002" cy="257" r="2.5"/>
-        <circle cx="1006" cy="260" r="1.8"/>
-        <circle cx="1010" cy="258" r="2.3"/>
-        <circle cx="1014" cy="261" r="1.6"/>
-        <circle cx="1018" cy="258" r="2.1"/>
-        <circle cx="1022" cy="260" r="1.5"/>
-        <circle cx="1026" cy="257" r="1.9"/>
-        <circle cx="1030" cy="259" r="1.4"/>
-      </g>
-      <!-- eye corners: crisp ray paths with mixed whirls -->
-      <g fill="none" stroke="#b98d4f" stroke-width="1.6" opacity="1">
-        <path d="M 982 246 Q 962 244 948 240 Q 938 237 930 238"/>
-        <path d="M 982 246 Q 962 248 948 252 Q 938 255 930 254"/>
-        <path d="M 1042 246 Q 1062 244 1076 240 Q 1086 237 1094 238"/>
-        <path d="M 1042 246 Q 1062 248 1076 252 Q 1086 255 1094 254"/>
-      </g>
-      <g fill="none" stroke="#a83e22" stroke-width="1.1" opacity="0.95">
-        <circle cx="972" cy="243" r="2.6"/>
-        <circle cx="964" cy="241" r="2.0"/>
-        <circle cx="956" cy="242" r="2.4"/>
-        <circle cx="948" cy="240" r="1.8"/>
-        <circle cx="940" cy="241" r="2.1"/>
-        <circle cx="972" cy="249" r="2.5"/>
-        <circle cx="964" cy="251" r="1.9"/>
-        <circle cx="956" cy="250" r="2.3"/>
-        <circle cx="948" cy="252" r="1.7"/>
-        <circle cx="940" cy="251" r="2.0"/>
-        <circle cx="1052" cy="243" r="2.6"/>
-        <circle cx="1060" cy="241" r="2.0"/>
-        <circle cx="1068" cy="242" r="2.4"/>
-        <circle cx="1076" cy="240" r="1.8"/>
-        <circle cx="1084" cy="241" r="2.1"/>
-        <circle cx="956" cy="246" r="1.3" fill="#a83e22" stroke="none"/>
-        <circle cx="1068" cy="246" r="1.3" fill="#a83e22" stroke="none"/>
-        <circle cx="1052" cy="249" r="2.5"/>
-        <circle cx="1060" cy="251" r="1.9"/>
-        <circle cx="1068" cy="250" r="2.3"/>
-        <circle cx="1076" cy="252" r="1.7"/>
-        <circle cx="1084" cy="251" r="2.0"/>
-      </g>
       <!-- ganymede transit shadow -->
       <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
