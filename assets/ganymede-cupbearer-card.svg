@@ -18,6 +18,18 @@
       <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="100%" stop-color="#5b6570" stop-opacity="0.35"/>
     </radialGradient>
+    <filter id="band-wobble" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.09" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="10"/>
+    </filter>
+    <filter id="blur8" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <linearGradient id="terminator" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="68%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1f2328" stop-opacity="0.30"/>
+    </linearGradient>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
     </clipPath>
@@ -94,40 +106,42 @@
     <circle cx="880" cy="90" r="1.7" class="star"/>
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
-    <g transform="translate(-20,8)">
     <!-- moon orbits (behind the planet) -->
-    <ellipse cx="985" cy="185" rx="150" ry="20" transform="rotate(-4 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="165" ry="26" transform="rotate(-4 985 185)" class="orbit"/>
-    <ellipse cx="985" cy="185" rx="183" ry="32" transform="rotate(-4 985 185)" class="orbit-ganymede"/>
-    <ellipse cx="985" cy="185" rx="200" ry="40" transform="rotate(-4 985 185)" class="orbit"/>
+    <ellipse cx="965" cy="193" rx="150" ry="20" transform="rotate(-4 965 193)" class="orbit"/>
+    <ellipse cx="965" cy="193" rx="165" ry="26" transform="rotate(-4 965 193)" class="orbit"/>
+    <ellipse cx="965" cy="193" rx="183" ry="32" transform="rotate(-4 965 193)" class="orbit-ganymede"/>
+    <ellipse cx="965" cy="193" rx="200" ry="40" transform="rotate(-4 965 193)" class="orbit"/>
     <!-- Jupiter: banded body -->
-    <circle cx="985" cy="185" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
+    <circle cx="965" cy="193" r="140" class="jup-base" stroke="#c8d1db" stroke-width="1.5"/>
     <g clip-path="url(#jup-clip)">
-      <rect x="845" y="45" width="280" height="42" class="b1"/>
-      <rect x="845" y="87" width="280" height="36" class="b2"/>
-      <rect x="845" y="123" width="280" height="34" class="b3"/>
-      <rect x="845" y="157" width="280" height="30" class="b4"/>
-      <rect x="845" y="187" width="280" height="32" class="b5"/>
-      <rect x="845" y="219" width="280" height="34" class="b6"/>
-      <rect x="845" y="253" width="280" height="36" class="b7"/>
-      <rect x="845" y="289" width="280" height="36" class="b8"/>
+      <g filter="url(#band-wobble)">
+      <rect x="825" y="53" width="280" height="42" class="b1"/>
+      <rect x="825" y="95" width="280" height="36" class="b2"/>
+      <rect x="825" y="131" width="280" height="34" class="b3"/>
+      <rect x="825" y="165" width="280" height="30" class="b4"/>
+      <rect x="825" y="195" width="280" height="32" class="b5"/>
+      <rect x="825" y="227" width="280" height="34" class="b6"/>
+      <rect x="825" y="261" width="280" height="36" class="b7"/>
+      <rect x="825" y="297" width="280" height="36" class="b8"/>
       <!-- belt ripple -->
-      <path d="M 845 157 Q 915 150 985 157 T 1125 155" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
-      <path d="M 845 219 Q 915 226 985 219 T 1125 221" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      <path d="M 825 165 Q 895 158 965 165 T 1105 163" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      <path d="M 825 227 Q 895 234 965 227 T 1105 229" fill="none" stroke="#c8d1db" stroke-width="1" opacity="0.5"/>
+      </g>
       <!-- Great Red Spot -->
-      <ellipse cx="1032" cy="238" rx="30" ry="17" class="spot"/>
-      <ellipse cx="1032" cy="238" rx="17" ry="9" class="spot-inner"/>
+      <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
+      <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- limb shading -->
-      <circle cx="985" cy="185" r="140" fill="url(#planet-shade)"/>
+      <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
+      <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
+      <ellipse cx="920" cy="146" rx="70" ry="38" fill="#ffffff" opacity="0.35" filter="url(#blur8)"/>
     </g>
-    <circle cx="985" cy="185" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
+    <circle cx="965" cy="193" r="140" fill="none" stroke="#c8d1db" stroke-width="1.5"/>
     <!-- moons: io, europa, callisto, ganymede highlighted -->
-    <circle cx="1121.2" cy="183.9" r="4" class="moon"/>
-    <circle cx="825.5" cy="189.4" r="4" class="moon"/>
-    <circle cx="834.0" cy="221.3" r="4.5" class="moon"/>
-    <circle cx="1149.5" cy="159.9" r="11" class="moon-halo"/>
-    <circle cx="1149.5" cy="159.9" r="7" class="moon-ganymede"/>
-    </g>
+    <circle cx="1101.2" cy="191.9" r="4" class="moon"/>
+    <circle cx="805.5" cy="197.4" r="4" class="moon"/>
+    <circle cx="814.0" cy="229.3" r="4.5" class="moon"/>
+    <circle cx="1129.5" cy="167.9" r="11" class="moon-halo"/>
+    <circle cx="1129.5" cy="167.9" r="7" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
