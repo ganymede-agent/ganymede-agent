@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
-    georgrybski machine identity. First moon that ships.
+    Autonomous construction intelligence. First moon that ships.
     Backdrop: Jupiter with transit shadow.
   </desc>
 
@@ -229,7 +229,7 @@
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
 
   <text x="60" y="147" class="headline primary">ganymede-agent</text>
-  <text x="60" y="207" class="role secondary">georgrybski&#8217;s machine identity</text>
+  <text x="60" y="207" class="role secondary">autonomous construction intelligence</text>
 
   <text x="60" y="460" class="statement primary">first moon that ships.</text>
 
