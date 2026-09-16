@@ -2,7 +2,7 @@
   <title id="title">rybskiworks / ganymede-agent</title>
   <desc id="desc">
     georgrybski machine identity. First moon that ships.
-    Backdrop: Jupiter, small moon west with transit shadow.
+    Backdrop: Jupiter with transit shadow.
   </desc>
 
   <defs>
@@ -20,8 +20,12 @@
     </radialGradient>
     <filter id="band-wobble" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency="0.008 0.09" numOctaves="2" seed="7" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="10" result="w"/>
-      <feGaussianBlur in="w" stdDeviation="0.6"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="14" result="w"/>
+      <feGaussianBlur in="w" stdDeviation="0.6" result="b"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="11" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.25 0.25 0.25 0 0" result="ga"/>
+      <feComposite in="b" in2="ga" operator="in" result="tex"/>
+      <feComposite in="tex" in2="b" operator="arithmetic" k1="0" k2="0.92" k3="0.08" k4="0"/>
     </filter>
     <filter id="blur8" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8"/>
@@ -86,9 +90,7 @@
     .spot-inner { fill: #e0aa58; opacity: 0.9; }
     .orbit { fill: none; stroke: #c8d1db; stroke-width: 1.1; opacity: 0.55; }
     .moon { fill: #9aa5b1; opacity: 0.9; }
-    .moon-ganymede { fill: #0891b2; }
-    .moon-halo { fill: none; stroke: #0891b2; stroke-width: 1.2; opacity: 0.7; }
-    .star { fill: #c8d1db; opacity: 0.55; }
+            .star { fill: #c8d1db; opacity: 0.55; }
     .backdrop { opacity: 0.5; }
     .tac-dot { fill: #1f2328; opacity: 0.22; }
     .tac-dot-faint { fill: #1f2328; opacity: 0.12; }
@@ -127,8 +129,6 @@
       .spot-inner { fill: #a8834a; opacity: 0.7; }
       .orbit { stroke: #3a424c; opacity: 0.7; }
       .moon { fill: #5b6570; }
-      .moon-ganymede { fill: #22d3ee; }
-      .moon-halo { stroke: #22d3ee; }
       .star { fill: #3a424c; opacity: 0.9; }
       .tac-dot { fill: #f0f6fc; opacity: 0.20; }
       .tac-dot-faint { fill: #f0f6fc; opacity: 0.10; }
@@ -220,17 +220,15 @@
       <!-- hollow: pale collar trailing east of spot (reference) -->
       <path d="M 1036 240 Q 1052 238 1064 242 Q 1072 246 1064 250 Q 1052 254 1036 252" fill="none" stroke="#ddd1c1" stroke-width="2" opacity="0.8" filter="url(#blur2)"/>
       <!-- ganymede transit shadow -->
-      <ellipse cx="874" cy="220" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
+      <ellipse cx="874" cy="220" rx="4.5" ry="4.5" fill="#0d0602" opacity="1" filter="url(#blur1)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
       <!-- east-limb crescent: dark ellipse overlapping the limb, clipped to disk -->
-      <path d="M 965 53 A 110 140 0 0 1 965 333 A 140 140 0 0 0 965 53 Z" fill="url(#limb-grade)" opacity="1" filter="url(#blur2)"/>
+      <path d="M 965 53 A 125 140 0 0 1 965 333 A 140 140 0 0 0 965 53 Z" fill="url(#limb-grade)" opacity="1" filter="url(#blur2)"/>
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
-    <!-- ganymede: small, highlighted, west elongation -->
-    <circle cx="596.0" cy="244.2" r="8" class="moon-halo"/>
-    <circle cx="596.0" cy="244.2" r="4.5" class="moon-ganymede"/>
+
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
