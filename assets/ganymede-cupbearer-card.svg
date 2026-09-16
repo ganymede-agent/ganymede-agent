@@ -54,7 +54,7 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <mask id="trail-mask">
-      <path d="M 652.0 194.6 L 649.7 194.8 L 647.6 195.0 L 645.5 195.2 L 643.5 195.4 L 641.6 195.6 L 639.9 195.8 L 638.2 195.9 L 636.6 196.1 L 635.1 196.3 L 633.7 196.5 L 632.4 196.7 L 631.3 196.9 L 630.2 197.1 L 629.2 197.3 L 628.3 197.5 L 627.6 197.7 L 626.9 197.9 L 626.3 198.0 L 625.9 198.2 L 625.5 198.4 L 625.3 198.6 L 625.1 198.8 L 625.1 198.9 L 625.1 199.1 L 625.3 199.3 L 625.5 199.4 L 625.9 199.6 L 626.4 199.8 L 626.9 199.9 L 627.6 200.1 L 628.4 200.3" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 644.5 228.4 L 641.4 229.0 L 638.3 229.5 L 635.4 230.1 L 632.5 230.7 L 629.8 231.3 L 627.1 231.8 L 624.6 232.4 L 622.2 233.0 L 619.8 233.5 L 617.6 234.1 L 615.5 234.6 L 613.4 235.1 L 611.5 235.7 L 609.7 236.2 L 608.0 236.7 L 606.5 237.3 L 605.0 237.8 L 603.6 238.3 L 602.4 238.8 L 601.2 239.3 L 600.2 239.7 L 599.3 240.2 L 598.4 240.7 L 597.7 241.2 L 597.2 241.6 L 596.7 242.1 L 596.3 242.5 L 596.1 243.0 L 595.9 243.4 L 595.9 243.8 L 596.0 244.2" fill="none" stroke="url(#trail-fade)" stroke-width="6" stroke-linecap="round"/>
     </mask>
     <clipPath id="jup-clip">
       <circle cx="965" cy="193" r="140"/>
@@ -155,9 +155,9 @@
     <circle cx="150" cy="620" r="2" class="star"/>
     <circle cx="320" cy="680" r="1.6" class="star"/>
     <!-- trailing arc: moon moves west, trail fades behind (far side) -->
-    <ellipse cx="965" cy="193" rx="340" ry="10" transform="rotate(-1 965 193)" fill="none" stroke="none"/>
+    <ellipse cx="965" cy="218" rx="370" ry="24" transform="rotate(-4 965 218)" fill="none" stroke="none"/>
     <g mask="url(#trail-mask)">
-      <ellipse cx="965" cy="193" rx="340" ry="10" transform="rotate(-1 965 193)" class="orbit-ganymede"/>
+      <ellipse cx="965" cy="218" rx="370" ry="24" transform="rotate(-4 965 218)" class="orbit-ganymede"/>
     </g>
     <!-- Jupiter: banded body -->
     <circle cx="965" cy="193" r="140" class="jup-base" stroke="#6b7683" stroke-width="2"/>
@@ -230,7 +230,7 @@
       <!-- hollow: pale collar trailing east of spot (reference) -->
       <path d="M 1036 240 Q 1052 238 1064 242 Q 1072 246 1064 250 Q 1052 254 1036 252" fill="none" stroke="#ddd1c1" stroke-width="2" opacity="0.8" filter="url(#blur2)"/>
       <!-- ganymede transit shadow -->
-      <ellipse cx="890" cy="228" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
+      <ellipse cx="874" cy="220" rx="5.5" ry="5.5" fill="#160b03" opacity="0.95" filter="url(#blur1)"/>
       <!-- limb shading -->
       <circle cx="965" cy="193" r="140" fill="url(#planet-shade)"/>
       <circle cx="965" cy="193" r="140" fill="url(#terminator)"/>
@@ -239,8 +239,8 @@
     </g>
     <circle cx="965" cy="193" r="140" fill="none" stroke="#4b5560" stroke-width="2"/>
     <!-- ganymede: small, highlighted, west elongation -->
-    <circle cx="628.4" cy="200.3" r="8" class="moon-halo"/>
-    <circle cx="628.4" cy="200.3" r="4.5" class="moon-ganymede"/>
+    <circle cx="596.0" cy="244.2" r="8" class="moon-halo"/>
+    <circle cx="596.0" cy="244.2" r="4.5" class="moon-ganymede"/>
   </g>
 
   <text x="60" y="86" class="signature gradient-text">rybskiworks</text>
