@@ -182,9 +182,10 @@
       <ellipse cx="935" cy="241" rx="5" ry="3" class="storm"/>
       <ellipse cx="1062" cy="170" rx="6" ry="3.5" class="storm"/>
       </g>
-      <!-- Great Red Spot with split/rejoin flow -->
-      <path d="M 948 236 Q 978 231 996 228 Q 1010 218 1026 226 Q 1040 233 1054 238 Q 1068 242 1084 240" fill="none" stroke="#b98d4f" stroke-width="1.6" opacity="0.8" filter="url(#blur2)"/>
-      <path d="M 948 254 Q 978 260 996 264 Q 1010 274 1026 267 Q 1040 261 1054 256 Q 1068 252 1084 250" fill="none" stroke="#b98d4f" stroke-width="1.6" opacity="0.8" filter="url(#blur2)"/>
+      <!-- Great Red Spot: flow splits, wraps, rejoins -->
+      <path d="M 930 240 C 955 235, 970 232, 982 226 C 994 220, 1002 218, 1012 218 C 1022 218, 1030 220, 1042 226 C 1054 232, 1071 236, 1096 234" fill="none" stroke="#b98d4f" stroke-width="1.7" opacity="0.85" filter="url(#blur2)"/>
+      <path d="M 930 252 C 955 257, 970 260, 982 266 C 994 272, 1002 274, 1012 274 C 1022 274, 1030 272, 1042 266 C 1054 260, 1071 256, 1096 258" fill="none" stroke="#b98d4f" stroke-width="1.7" opacity="0.85" filter="url(#blur2)"/>
+      <path d="M 948 246 C 968 244, 978 242, 986 238 M 1038 254 C 1046 250, 1056 248, 1076 246" fill="none" stroke="#b98d4f" stroke-width="1.2" opacity="0.7" filter="url(#blur2)"/>
       <ellipse cx="1012" cy="246" rx="30" ry="17" class="spot"/>
       <ellipse cx="1012" cy="246" rx="17" ry="9" class="spot-inner"/>
       <!-- ganymede transit shadow -->
